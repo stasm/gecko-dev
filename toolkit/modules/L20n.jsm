@@ -18,6 +18,9 @@ XPCOMUtils.defineLazyModuleGetter(this, "L20nParser",
 
 Cu.import("resource://gre/modules/IntlMessageContext.jsm");
 
+const { loadKinto } = Cu.import("resource://services-common/kinto-offline-client.js");
+const Kinto = loadKinto();
+
 class Env {
   constructor() {
   }
@@ -35,38 +38,27 @@ this.L20n = new Env();
 
 const IO = {
   load: function(url) {
-    return new Promise((resolve, reject) => {
-			var req = Cc["@mozilla.org/xmlextras/xmlhttprequest;1"]
-												.createInstance(Ci.nsIXMLHttpRequest)
+    let FirefoxAdapter = Kinto.adapters.FirefoxAdapter;
+    let config = {
+      remote: "http://localhost:8888/v1",
+      headers: {"Authorization": "Basic c3Rhczo=" } ,
+      bucket: "l10n",
+      adapter: FirefoxAdapter
+    };
 
-			req.mozBackgroundRequest = true;
-			req.overrideMimeType("text/plain");
-			req.open("GET", url, true);
+    let db = new Kinto(config);
+    let resources = db.collection('en-US');
+    let resource;
 
-			req.addEventListener('load', () => {
-				if (req.status == 200) {
-					resolve(req.responseText);
-				}
-			});
-      req.send(null);
-    });
-    /*let hiddenWindow = Services.appShell.hiddenDOMWindow;
-    return new Promise((resolve, reject) => {
-      const xhr = new hiddenWindow.XmlHttpRequest();
-
-      xhr.open('GET', url, true);
-
-      xhr.addEventListener('load', e => {
-        if (e.target.status = 200) {
-          resolve(e.target.response);
-        } else {
-          reject('Not found: ' + url);
-        }
+    return resources.db.open()
+      .then(() => resources.sync())
+      .then(() => resources.list())
+      .then(({data}) => data.filter(resource => resource.resid === url))
+      .then(([found]) => resource = found)
+      .then(() => resources.db.close())
+      .then(() => {
+        return resource.content;
       });
-    });*/
-    /*return hiddenWindow.fetch(url).then(response => {
-      return response.text();
-    });*/
   }
 };
 
