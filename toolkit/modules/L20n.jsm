@@ -37,7 +37,7 @@ class Env {
 this.L20n = new Env();
 
 const IO = {
-  load: function(url) {
+  load: function(lang, url) {
     let FirefoxAdapter = Kinto.adapters.FirefoxAdapter;
     let config = {
       remote: "http://localhost:8888/v1",
@@ -47,7 +47,7 @@ const IO = {
     };
 
     let db = new Kinto(config);
-    let resources = db.collection('en-US');
+    let resources = db.collection(lang);
     let resource;
 
     return resources.db.open()
@@ -97,7 +97,7 @@ class L20nContext {
       this.resCache[lang] = {};
 
       this.resIds.forEach(resId => {
-        resLoading.push(IO.load(resId).then(source => {
+        resLoading.push(IO.load(lang, resId).then(source => {
           const [entries, errors] = L20nParser.parseResource(source);
           this.resCache[lang][resId] = entries;
         }));
