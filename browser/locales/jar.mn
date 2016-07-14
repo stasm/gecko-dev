@@ -25,6 +25,8 @@
     locale/browser/browser.dtd                     (%chrome/browser/browser.dtd)
     locale/browser/baseMenuOverlay.dtd             (%chrome/browser/baseMenuOverlay.dtd)
     locale/browser/browser.properties              (%chrome/browser/browser.properties)
+    locale/browser/browser.en-US.ftl               (%chrome/browser/browser.en-US.ftl)
+    locale/browser/browser.pl.ftl                  (%chrome/browser/browser.pl.ftl)
     locale/browser/customizableui/customizableWidgets.properties (%chrome/browser/customizableui/customizableWidgets.properties)
     locale/browser/lightweightThemes.properties    (%chrome/browser/lightweightThemes.properties)
     locale/browser/loop/loop.properties            (%chrome/browser/loop/loop.properties)
