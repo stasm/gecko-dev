@@ -581,9 +581,14 @@ const ns = 'http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul';
 const allowed = {
   attributes: {
     global: ['aria-label', 'aria-valuetext', 'aria-moz-hint'],
+    broadcaster: ['bookmarklabel', 'editlabel', 'label', 'sidebartitle'],
     button: ['accesskey'],
+    key: ['key', 'keycode'],
+    menu: ['label', 'accesskey'],
+    menuitem: ['label', 'accesskey'],
     tab: ['label'],
     textbox: ['placeholder'],
+    toolbarbutton: ['label', 'tooltiptext'],
   }
 };
 
