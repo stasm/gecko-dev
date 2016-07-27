@@ -3,164 +3,164 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 urlbar =
-    [placeholder] Search or enter address (FTL)
-    [accesskey]   d
+    [xul/placeholder] Search or enter address (FTL)
+    [xul/accesskey]   d
 
 
 [[ File menu ]]
 
 file-menu =
-    [label]     File
-    [accesskey] F
+    [xul/label]     File
+    [xul/accesskey] F
 tab-cmd =
-    [label]      New Tab
-    [accesskey]  T
+    [xul/label]      New Tab
+    [xul/accesskey]  T
 tab-key =
-    [key]        t
+    [xul/key]        t
 new-user-context =
-    [label]      New Container Tab
-    [accesskey]  C
+    [xul/label]      New Container Tab
+    [xul/accesskey]  C
 new-navigator-cmd =
-    [label]      New Window
-    [accesskey]  N
+    [xul/label]      New Window
+    [xul/accesskey]  N
 new-navigator-key =
-    [key]        N
+    [xul/key]        N
 new-private-window =
-    [label]      New Private Window
-    [accesskey]  W
+    [xul/label]      New Private Window
+    [xul/accesskey]  W
 new-non-remote-window =
-    [label]      New Non-e10s Window
+    [xul/label]      New Non-e10s Window
 
 # Only displayed on OS X, and only on windows that aren't main browser windows,
 # or when there are no windows but Firefox is still running.
 open-location-cmd =
-    [label]      Open Location…
+    [xul/label]      Open Location…
 open-file-cmd =
-    [label]      Open File…
-    [accesskey]  O
+    [xul/label]      Open File…
+    [xul/accesskey]  O
 open-file-key =
-    [key]        o
+    [xul/key]        o
 
 close-cmd =
-    [label]      Close
-    [accesskey]  C
+    [xul/label]      Close
+    [xul/accesskey]  C
 close-key =
-    [key]        W
+    [xul/key]        W
 close-window =
-    [label]      Close Window
-    [accesskey]  d
+    [xul/label]      Close Window
+    [xul/accesskey]  d
 
-# [accesskey2] is for content area context menu
+# [xul/accesskey2] is for content area context menu
 save-page-cmd =
-    [label]      Save Page As…
-    [accesskey]  A
-    [accesskey2] P
+    [xul/label]      Save Page As…
+    [xul/accesskey]  A
+    [xul/accesskey2] P
 save-page-key =
-    [key]        s
+    [xul/key]        s
 
 email-page-cmd =
-    [label]      Email Link…
-    [accesskey]  E
+    [xul/label]      Email Link…
+    [xul/accesskey]  E
 
 print-setup-cmd =
-    [label]      Page Setup…
-    [accesskey]  u
+    [xul/label]      Page Setup…
+    [xul/accesskey]  u
 print-preview-cmd =
-    [label]      Print Preview…
-    [accesskey]  v
+    [xul/label]      Print Preview…
+    [xul/accesskey]  v
 print-cmd =
-    [label]      Print…
-    [accesskey]  P
+    [xul/label]      Print…
+    [xul/accesskey]  P
 print-key =
-    [key]        p
+    [xul/key]        p
 
 go-offline-cmd =
-    [label]      Work Offline
-    [accesskey]  k
+    [xul/label]      Work Offline
+    [xul/accesskey]  k
 
 quit-application-cmd =
-    [label]      { OS() ->
+    [lxul/abel]      { OS() ->
         [win]    Exit
         [mac]    Quit { brand-shorter-name }
        *[lin]    Quit
     }
-    [accesskey]  { OS() ->
+    [xul/accesskey]  { OS() ->
         [win]    x
         [mac]    Q
        *[lin]    Q
     }
-# [key] is used by both Linux and OSX builds
+# [xul/key] is used by both Linux and OSX builds
 quit-application-key =
-    [key]        Q
+    [xul/key]        Q
 
 [[ Edit menu ]]
 
 edit-menu =
-    [label]      Edit
-    [accesskey]  E
+    [xul/label]      Edit
+    [xul/accesskey]  E
 undo-cmd =
-    [label]      Undo
-    [accesskey]  U
+    [xul/label]      Undo
+    [xul/accesskey]  U
 undo-key =
-    [key]        Z
+    [xul/key]        Z
 redo-cmd =
-    [label]      Redo
-    [accesskey]  R
+    [xul/label]      Redo
+    [xul/accesskey]  R
 redo-key =
-    [key]        Y
+    [xul/key]        Y
 cut-cmd =
-    [label]      Cut
-    [accesskey]  t
+    [xul/label]      Cut
+    [xul/accesskey]  t
 cut-key =
-    [key]        X
+    [xul/key]        X
 copy-cmd =
-    [label]      Copy
-    [accesskey]  C
+    [xul/label]      Copy
+    [xul/accesskey]  C
 copy-key =
-    [key]        C
+    [xul/key]        C
 paste-cmd =
-    [label]      Paste
-    [accesskey]  P
+    [xul/label]      Paste
+    [xul/accesskey]  P
 paste-key =
-    [key]        V
+    [xul/key]        V
 delete-cmd =
-    [label]      Delete
-    [accesskey]  D
+    [xul/label]      Delete
+    [xul/accesskey]  D
 delete-key =
-    [key]        D
+    [xul/key]        D
 select-all-cmd =
-    [label]      Select All
-    [accesskey]  A
+    [xul/label]      Select All
+    [xul/accesskey]  A
 select-all-key =
-    [key]        A
+    [xul/key]        A
 
 find-on-cmd =
-    [label]      Find in This Page…
-    [accesskey]  F
+    [xul/label]      Find in This Page…
+    [xul/accesskey]  F
 find-on-key =
-    [key]        f
+    [xul/key]        f
 find-again-cmd =
-    [label]      Find Again
-    [accesskey]  g
+    [xul/label]      Find Again
+    [xul/accesskey]  g
 find-again-key1 =
-    [key]        g
+    [xul/key]        g
 find-again-key2 =
-    [keycode]    VK_F3
+    [xul/keycode]    VK_F3
 find-selection-key =
-    [key]        e
+    [xul/key]        e
 
 bidi-switch-text-direction-item =
-    [label]      Switch Text Direction
-    [accesskey]  w
+    [xul/label]      Switch Text Direction
+    [xul/accesskey]  w
 bidi-switch-text-direction-key =
-    [key]        X
+    [xul/key]        X
 
 preferences-cmd =
-    [label]      { OS() ->
+    [xul/label]      { OS() ->
         [win]    Options
        *[other]  Preferences
     }
-    [accesskey]  { OS() ->
+    [xul/accesskey]  { OS() ->
         [win]    O
        *[other]  n
     }
@@ -169,201 +169,201 @@ preferences-cmd =
 [[ View menu ]]
 
 view-menu =
-    [label]      View
-    [accesskey]  V
+    [xul/label]      View
+    [xul/accesskey]  V
 view-toolbars-menu =
-    [label]      Toolbars
-    [accesskey]  T
+    [xul/label]      Toolbars
+    [xul/accesskey]  T
 view-sidebar-menu =
-    [label]      Sidebar
-    [accesskey]  e
+    [xul/label]      Sidebar
+    [xul/accesskey]  e
 view-customize-toolbar =
-    [label]      Customize…
-    [accesskey]  C
+    [xul/label]      Customize…
+    [xul/accesskey]  C
 
 synced-tabs-sidebar =
-    [label]      Synced Tabs
+    [xul/label]      Synced Tabs
 
 full-zoom =
-    [label]      Zoom
-    [accesskey]  Z
+    [xul/label]      Zoom
+    [xul/accesskey]  Z
 full-zoom-enlarge-cmd =
-    [label]      Zoom In
-    [accesskey]  I
+    [xul/label]      Zoom In
+    [xul/accesskey]  I
 full-zoom-enlarge-key1 =
-    [key]        +
+    [xul/key]        +
 full-zoom-enlarge-key2 =
-    [key]        =
+    [xul/key]        =
 full-zoom-enlarge-key3 =
-    [key]        ""
+    [xul/key]        ""
 full-zoom-reduce-cmd =
-    [label]      Zoom Out
-    [accesskey]  O
+    [xul/label]      Zoom Out
+    [xul/accesskey]  O
 full-zoom-reduce-key1 =
-    [key]        -
+    [xul/key]        -
 full-zoom-reduce-key2 =
-    [key]        ""
+    [xul/key]        ""
 full-zoom-reset-cmd =
-    [label]      Reset
-    [accesskey]  R
+    [xul/label]      Reset
+    [xul/accesskey]  R
 full-zoom-reset-key1 =
-    [key]        0
+    [xul/key]        0
 full-zoom-reset-key2 =
-    [key]        ""
+    [xul/key]        ""
 full-zoom-toggle-cmd =
-    [label]      Zoom Text Only
-    [accesskey]  T
+    [xul/label]      Zoom Text Only
+    [xul/accesskey]  T
 
 page-style-menu =
-    [label]      Page style
-    [accesskey]  y
+    [xul/label]      Page style
+    [xul/accesskey]  y
 page-style-no-style =
-    [label]      No Style
-    [accesskey]  n
+    [xul/label]      No Style
+    [xul/accesskey]  n
 page-style-persistent-only =
-    [label]      Basic Page Style
-    [accesskey]  b
+    [xul/label]      Basic Page Style
+    [xul/accesskey]  b
 
 # These should match what Safari and other Apple applications use on OS X Lion.
 enter-full-screen-cmd =
-    [label]      Enter Full Screen
-    [accesskey]  F
+    [xul/label]      Enter Full Screen
+    [xul/accesskey]  F
 exit-full-screen-cmd =
-    [label]      Exit Full Screen
-    [accesskey]  F
+    [xul/label]      Exit Full Screen
+    [xul/accesskey]  F
 full-screen-cmd =
-    [label]      Full Screen
-    [accesskey]  F
+    [xul/label]      Full Screen
+    [xul/accesskey]  F
 full-screen-key =
-    [key]        f
+    [xul/key]        f
 show-all-tabs-cmd =
-    [label]      Show All Tabs
-    [accesskey]  A
+    [xul/label]      Show All Tabs
+    [xul/accesskey]  A
 bidi-switch-page-direction-item =
-    [label]      Switch Page Direction
-    [accesskey]  D
+    [xul/label]      Switch Page Direction
+    [xul/accesskey]  D
 
 
 [[ History menu ]]
 
 history-menu =
-    [label]        History
-    [accesskey]    s
+    [xul/label]        History
+    [xul/accesskey]    s
 show-all-history-cmd =
-    [label]        Show All History
+    [xul/label]        Show All History
 show-all-history-key =
-    [key]          H
+    [xul/key]          H
 clear-recent-history =
-    [label]        Clean Recent History…
+    [xul/label]        Clean Recent History…
 # This appears in the history menu
 synced-tabs-menu =
-    [label]        Synced Tabs
+    [xul/label]        Synced Tabs
 history-restore-last-session =
-    [label]        Restore Previous Session
+    [xul/label]        Restore Previous Session
 history-undo-menu =
-    [label]        Recently Closed Tabs
+    [xul/label]        Recently Closed Tabs
 # See bug 394759
 history-undo-window-menu =
-    [label]        Recently Closed Windows
+    [xul/label]        Recently Closed Windows
 
 
 [[ Bookmarks menu ]]
 
 bookmarks-menu =
-    [label]      Bookmarks
-    [accesskey]  B
+    [xul/label]      Bookmarks
+    [xul/accesskey]  B
 show-all-bookmarks =
-    [label]      Show All Bookmarks
+    [xul/label]      Show All Bookmarks
 bookmark-this-page-cmd =
-    [label]          Bookmark This Page
-    [bookmarklabel]  Bookmark This Page
-    [editlabel]      Edit This Page
+    [xul/label]          Bookmark This Page
+    [xul/bookmarklabel]  Bookmark This Page
+    [xul/editlabel]      Edit This Page
 bookmark-this-page-key =
-    [key]            d
+    [xul/key]            d
 subscribe-to-page-menuitem =
-    [label]      Subscribe to This Page…
+    [xul/label]      Subscribe to This Page…
 subscribe-to-page-menupopup =
-    [label]      Subscribe to This Page…
+    [xul/label]      Subscribe to This Page…
 add-cur-pages-cmd =
-    [label]      Bookmark All Tabs…
+    [xul/label]      Bookmark All Tabs…
 recent-bookmarks =
-    [label]      Recently Bookmarked
+    [xul/label]      Recently Bookmarked
 other-bookmarks-cmd =
-    [label]      Other Bookmarks
+    [xul/label]      Other Bookmarks
 
 personalbar-cmd =
-    [label]      Bookmarks Toolbar
-    [accesskey]  B
+    [xul/label]      Bookmarks Toolbar
+    [xul/accesskey]  B
 
 
 [[ Tools menu ]]
 
 tools-menu =
-    [label]      Tools
-    [accesskey]  T
+    [xul/label]      Tools
+    [xul/accesskey]  T
 downloads =
-    [label]      Downloads
-    [accesskey]  D
+    [xul/label]      Downloads
+    [xul/accesskey]  D
 downloads-key =
-    [key]        { OS() ->
+    [xul/key]        { OS() ->
         [lin]    y
        *[other]  j
     }
 addons =
-    [label]      Add-ons
-    [accesskey]  A
+    [xul/label]      Add-ons
+    [xul/accesskey]  A
 addons-key =
-    [key]        A
+    [xul/key]        A
 
 sync-brand-short-name =
-   *[label]      Sync
+   *[xul/label]      Sync
 
 sync-sign-in =
-    [label]      Sign In To { sync-brand-short-name }…
-    [accesskey]  Y
+    [xul/label]      Sign In To { sync-brand-short-name }…
+    [xul/accesskey]  Y
 sync-sync-now-item =
-    [labe1l]      Sync Now
-    [accesskey]  S
+    [xul/label]      Sync Now
+    [xul/accesskey]  S
 sync-re-auth-item =
-    [label]      Reconnect to { sync-brand-short-name }…
-    [accesskey]  R
+    [xul/label]      Reconnect to { sync-brand-short-name }…
+    [xul/accesskey]  R
 sync-toolbar-button =
-    [label]      Sync
+    [xul/label]      Sync
 
 web-developer-menu =
-    [label]      Web Developer
-    [accesskey]  W
+    [xul/label]      Web Developer
+    [xul/accesskey]  W
 
 page-source-cmd =
-    [label]      Page Source
-    [accesskey]  o
+    [xul/label]      Page Source
+    [xul/accesskey]  o
 page-source-key =
-    [key]        u
+    [xul/key]        u
 page-info-cmd =
-    [label]      Page Info
-    [accesskey]  I
+    [xul/label]      Page Info
+    [xul/accesskey]  I
 page-info-key =
-    [key]        i
+    [xul/key]        i
 mirror-tab-cmd =
-    [label]      Mirror Tab
-    [accesskey]  m
+    [xul/label]      Mirror Tab
+    [xul/accesskey]  m
 
 
 [[ Toolbar items ]]
 
 bookmarks-button =
-    [label]      Bookmarks
+    [xul/label]      Bookmarks
 
 # This command key for [lin] should not contain the letters A-F, since these
 # are reserved shortcut keys on Linux.
 bookmarks-key =
-  [key]    { OS() ->
+  [xul/key]    { OS() ->
       [win] o
       [mac] b
      *[lin] i
   }
 
 history-button =
-    [label]      History
+    [xul/label]      History
 history-button-key =
-    [key]        h
+    [xul/key]        h
