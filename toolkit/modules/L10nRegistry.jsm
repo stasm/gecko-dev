@@ -326,33 +326,27 @@ const platformFileSource = new FileSource('platform', {
   },
   '/global/aboutSupport.ftl': {
     'en-US': 'gre/chrome/en-US/locale/en-US/global/aboutSupport.en-US.ftl',
-    'pl': 'gre/chrome/en-US/locale/en-US/global/aboutSupport.pl.ftl',
   },
   '/global/resetProfile.ftl': {
     'en-US': 'gre/chrome/en-US/locale/en-US/global/resetProfile.en-US.ftl',
-    'pl': 'gre/chrome/en-US/locale/en-US/global/resetProfile.pl.ftl'
   }
 });
 
 const appFileSource = new FileSource('app', {
   '/branding/brand.ftl': {
     'en-US': '/chrome/en-US/locale/branding/brand.en-US.ftl',
-    'pl': '/chrome/en-US/locale/branding/brand.pl.ftl'
   },
   '/browser/aboutDialog.ftl': {
     'en-US': '/chrome/en-US/locale/browser/aboutDialog.en-US.ftl',
-    'pl': '/chrome/en-US/locale/browser/aboutDialog.pl.ftl'
   },
   '/browser/aboutRobots.ftl': {
     'en-US': '/chrome/en-US/locale/browser/aboutRobots.en-US.ftl',
   },
   '/browser/browser.ftl': {
     'en-US': '/chrome/en-US/locale/browser/browser.en-US.ftl',
-    'pl': '/chrome/en-US/locale/browser/browser.pl.ftl'
   },
   '/browser/tabbrowser.ftl': {
     'en-US': '/chrome/en-US/locale/browser/tabbrowser.en-US.ftl',
-    'pl': '/chrome/en-US/locale/browser/tabbrowser.pl.ftl'
   },
 });
 
