@@ -342,8 +342,11 @@ const appFileSource = new FileSource('app', {
   '/browser/aboutRobots.ftl': {
     'en-US': '/chrome/en-US/browser/aboutRobots.ftl',
   },
-  '/browser/browser.ftl': {
-    'en-US': '/chrome/en-US/browser/browser.ftl',
+  '/browser/menubar.ftl': {
+    'en-US': '/chrome/en-US/browser/menubar.ftl',
+  },
+  '/browser/toolbar.ftl': {
+    'en-US': '/chrome/en-US/browser/toolbar.ftl',
   },
   '/browser/tabbrowser.ftl': {
     'en-US': '/chrome/en-US/browser/tabbrowser.ftl',
