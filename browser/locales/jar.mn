@@ -114,11 +114,6 @@
 # hack, not sure we intend to stick to jar.mn for building
     browser                                        (%browser/*.ftl)
 
-# hack to pick up polish files from gecko instead l10n-central
-pl.jar:
-    browser                                        (pl/browser/*.ftl)
-
-
 #ifdef XPI_NAME
 # Bug 1240628, restructure how l10n repacks work with feature addons
 # This is hacky, but ensures the chrome.manifest chain is complete
