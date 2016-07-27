@@ -15,6 +15,7 @@ file-menu =
 tab-cmd =
     [label]      New Tab
     [accesskey]  T
+tab-key =
     [key]        t
 new-user-context =
     [label]      New Container Tab
@@ -22,6 +23,7 @@ new-user-context =
 new-navigator-cmd =
     [label]      New Window
     [accesskey]  N
+new-navigator-key =
     [key]        N
 new-private-window =
     [label]      New Private Window
@@ -36,11 +38,13 @@ open-location-cmd =
 open-file-cmd =
     [label]      Open File…
     [accesskey]  O
+open-file-key =
     [key]        o
 
 close-cmd =
     [label]      Close
     [accesskey]  C
+close-key =
     [key]        W
 close-window =
     [label]      Close Window
@@ -51,6 +55,7 @@ save-page-cmd =
     [label]      Save Page As…
     [accesskey]  A
     [accesskey2] P
+save-page-key =
     [key]        s
 
 email-page-cmd =
@@ -66,13 +71,13 @@ print-preview-cmd =
 print-cmd =
     [label]      Print…
     [accesskey]  P
+print-key =
     [key]        p
 
 go-offline-cmd =
     [label]      Work Offline
     [accesskey]  k
 
-# [key] is used by both Linux and OSX builds
 quit-application-cmd =
     [label]      { OS() ->
         [win]    Exit
@@ -84,6 +89,8 @@ quit-application-cmd =
         [mac]    Q
        *[lin]    Q
     }
+# [key] is used by both Linux and OSX builds
+quit-application-key =
     [key]        Q
 
 [[ Edit menu ]]
@@ -94,48 +101,58 @@ edit-menu =
 undo-cmd =
     [label]      Undo
     [accesskey]  U
+undo-key =
     [key]        Z
 redo-cmd =
     [label]      Redo
     [accesskey]  R
+redo-key =
     [key]        Y
 cut-cmd =
     [label]      Cut
     [accesskey]  t
+cut-key =
     [key]        X
 copy-cmd =
     [label]      Copy
     [accesskey]  C
+copy-key =
     [key]        C
 paste-cmd =
     [label]      Paste
     [accesskey]  P
+paste-key =
     [key]        V
 delete-cmd =
     [label]      Delete
     [accesskey]  D
+delete-key =
     [key]        D
 select-all-cmd =
     [label]      Select All
     [accesskey]  A
+select-all-key =
     [key]        A
 
 find-on-cmd =
     [label]      Find in This Page…
     [accesskey]  F
+find-on-key =
     [key]        f
 find-again-cmd =
     [label]      Find Again
     [accesskey]  g
+find-again-key1 =
     [key]        g
-find-again-cmd-alt =
+find-again-key2 =
     [keycode]    VK_F3
-find-selection-cmd =
+find-selection-key =
     [key]        e
 
 bidi-switch-text-direction-item =
     [label]      Switch Text Direction
     [accesskey]  w
+bidi-switch-text-direction-key =
     [key]        X
 
 preferences-cmd =
@@ -164,10 +181,6 @@ view-customize-toolbar =
     [label]      Customize…
     [accesskey]  C
 
-history-button =
-    [label]      History
-    [key]        h
-
 synced-tabs-sidebar =
     [label]      Synced Tabs
 
@@ -177,22 +190,25 @@ full-zoom =
 full-zoom-enlarge-cmd =
     [label]      Zoom In
     [accesskey]  I
+full-zoom-enlarge-key1 =
     [key]        +
-full-zoom-enlarge-cmd-alt1 =
+full-zoom-enlarge-key2 =
     [key]        =
-full-zoom-enlarge-cmd-alt2 =
+full-zoom-enlarge-key3 =
     [key]        ""
 full-zoom-reduce-cmd =
     [label]      Zoom Out
     [accesskey]  O
+full-zoom-reduce-key1 =
     [key]        -
-full-zoom-reduce-cmd-alt =
+full-zoom-reduce-key2 =
     [key]        ""
 full-zoom-reset-cmd =
     [label]      Reset
     [accesskey]  R
+full-zoom-reset-key1 =
     [key]        0
-full-zoom-reset-cmd-alt =
+full-zoom-reset-key2 =
     [key]        ""
 full-zoom-toggle-cmd =
     [label]      Zoom Text Only
@@ -218,6 +234,7 @@ exit-full-screen-cmd =
 full-screen-cmd =
     [label]      Full Screen
     [accesskey]  F
+full-screen-key =
     [key]        f
 show-all-tabs-cmd =
     [label]      Show All Tabs
@@ -234,6 +251,7 @@ history-menu =
     [accesskey]    s
 show-all-history-cmd =
     [label]        Show All History
+show-all-history-key =
     [key]          H
 clear-recent-history =
     [label]        Clean Recent History…
@@ -260,6 +278,7 @@ bookmark-this-page-cmd =
     [label]          Bookmark This Page
     [bookmarklabel]  Bookmark This Page
     [editlabel]      Edit This Page
+bookmark-this-page-key =
     [key]            d
 subscribe-to-page-menuitem =
     [label]      Subscribe to This Page…
@@ -285,6 +304,7 @@ tools-menu =
 downloads =
     [label]      Downloads
     [accesskey]  D
+downloads-key =
     [key]        { OS() ->
         [lin]    y
        *[other]  j
@@ -292,6 +312,7 @@ downloads =
 addons =
     [label]      Add-ons
     [accesskey]  A
+addons-key =
     [key]        A
 
 sync-brand-short-name =
@@ -316,10 +337,12 @@ web-developer-menu =
 page-source-cmd =
     [label]      Page Source
     [accesskey]  o
+page-source-key =
     [key]        u
 page-info-cmd =
     [label]      Page Info
     [accesskey]  I
+page-info-key =
     [key]        i
 mirror-tab-cmd =
     [label]      Mirror Tab
@@ -333,7 +356,7 @@ bookmarks-button =
 
 # This command key for [lin] should not contain the letters A-F, since these
 # are reserved shortcut keys on Linux.
-bookmarks-cmd =
+bookmarks-key =
   [key]    { OS() ->
       [win] o
       [mac] b
@@ -342,3 +365,5 @@ bookmarks-cmd =
 
 history-button =
     [label]      History
+history-button-key =
+    [key]        h
