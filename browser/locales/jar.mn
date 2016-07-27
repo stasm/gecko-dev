@@ -9,12 +9,9 @@
 *   locale/browser/bookmarks.html                  (generic/profile/bookmarks.html.in)
     locale/browser/aboutAccounts.dtd               (%chrome/browser/aboutAccounts.dtd)
     locale/browser/aboutDialog.dtd                 (%chrome/browser/aboutDialog.dtd)
-    locale/browser/aboutDialog.en-US.ftl           (%chrome/browser/aboutDialog.en-US.ftl)
-    locale/browser/aboutDialog.pl.ftl              (%chrome/browser/aboutDialog.pl.ftl)
     locale/browser/aboutPrivateBrowsing.dtd        (%chrome/browser/aboutPrivateBrowsing.dtd)
     locale/browser/aboutPrivateBrowsing.properties (%chrome/browser/aboutPrivateBrowsing.properties)
     locale/browser/aboutRobots.dtd                 (%chrome/browser/aboutRobots.dtd)
-    locale/browser/aboutRobots.en-US.ftl           (%chrome/browser/aboutRobots.en-US.ftl)
     locale/browser/aboutHome.dtd                   (%chrome/browser/aboutHome.dtd)
     locale/browser/accounts.properties             (%chrome/browser/accounts.properties)
 #ifdef MOZ_SERVICES_HEALTHREPORT
@@ -28,8 +25,6 @@
     locale/browser/browser.dtd                     (%chrome/browser/browser.dtd)
     locale/browser/baseMenuOverlay.dtd             (%chrome/browser/baseMenuOverlay.dtd)
     locale/browser/browser.properties              (%chrome/browser/browser.properties)
-    locale/browser/browser.en-US.ftl               (%chrome/browser/browser.en-US.ftl)
-    locale/browser/browser.pl.ftl                  (%chrome/browser/browser.pl.ftl)
     locale/browser/customizableui/customizableWidgets.properties (%chrome/browser/customizableui/customizableWidgets.properties)
     locale/browser/lightweightThemes.properties    (%chrome/browser/lightweightThemes.properties)
     locale/browser/loop/loop.properties            (%chrome/browser/loop/loop.properties)
@@ -47,8 +42,6 @@
     locale/browser/setDesktopBackground.dtd        (%chrome/browser/setDesktopBackground.dtd)
     locale/browser/shellservice.properties         (%chrome/browser/shellservice.properties)
     locale/browser/tabbrowser.properties           (%chrome/browser/tabbrowser.properties)
-    locale/browser/tabbrowser.en-US.ftl            (%chrome/browser/tabbrowser.en-US.ftl)
-    locale/browser/tabbrowser.pl.ftl               (%chrome/browser/tabbrowser.pl.ftl)
     locale/browser/taskbar.properties              (%chrome/browser/taskbar.properties)
     locale/browser/translation.dtd                 (%chrome/browser/translation.dtd)
     locale/browser/translation.properties          (%chrome/browser/translation.properties)
@@ -118,6 +111,13 @@
 % locale pdf.js @AB_CD@ %locale/pdfviewer/
     locale/pdfviewer/viewer.properties             (%pdfviewer/viewer.properties)
     locale/pdfviewer/chrome.properties             (%pdfviewer/chrome.properties)
+# hack, not sure we intend to stick to jar.mn for building
+    browser                                        (%browser/*.ftl)
+
+# hack to pick up polish files from gecko instead l10n-central
+pl.jar:
+    browser                                        (pl/browser/*.ftl)
+
 
 #ifdef XPI_NAME
 # Bug 1240628, restructure how l10n repacks work with feature addons

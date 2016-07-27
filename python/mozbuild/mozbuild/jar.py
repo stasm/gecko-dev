@@ -262,6 +262,9 @@ class JarMaker(object):
         The actual file processing is done in updateManifest.
         '''
 
+        # XXX Pike: No idea if this is sane or not, it just get's us over
+        # the hump to build both en-US and pl from browser/locales/jar.mn
+        self._seen_output.clear()
         # rewrite the manifest, if entries given
         if not register:
             return
