@@ -1665,9 +1665,10 @@ var BookmarkingUI = {
    */
   _updateBookmarkPageMenuItem: function BUI__updateBookmarkPageMenuItem(forceReset) {
     let isStarred = !forceReset && this._itemIds.length > 0;
-    let label = isStarred ? "editlabel" : "bookmarklabel";
+    let l10nId = isStarred ?
+      "edit-this-page-menuitem" : "bookmark-this-page-menuitem";
     if (this.broadcaster) {
-      this.broadcaster.setAttribute("label", this.broadcaster.getAttribute(label));
+      this.broadcaster.setAttribute("data-l10n-id", l10nId);
     }
   },
 

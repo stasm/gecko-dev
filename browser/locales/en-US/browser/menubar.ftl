@@ -273,11 +273,11 @@ bookmarks-menu =
 show-all-bookmarks-menuitem =
     [xul/label]      Show All Bookmarks
 bookmark-this-page-menuitem =
-    [xul/label]          Bookmark This Page
-    [xul/bookmarklabel]  Bookmark This Page
-    [xul/editlabel]      Edit This Page
+    [xul/label]      Bookmark This Page
+edit-this-page-menuitem =
+    [xul/label]      Edit This Page
 bookmark-this-page-key =
-    [xul/key]            d
+    [xul/key]        d
 subscribe-to-page-menuitem =
     [xul/label]      Subscribe to This Page…
 subscribe-to-page-menupopup =
