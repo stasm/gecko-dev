@@ -74,7 +74,7 @@ go-offline-cmd =
     [xul/accesskey]  k
 
 quit-application-cmd =
-    [lxul/abel]      { OS() ->
+    [xul/label]      { OS() ->
         [win]    Exit
         [mac]    Quit { brand-shorter-name }
        *[lin]    Quit
@@ -219,7 +219,16 @@ page-style-persistent-only =
     [xul/label]      Basic Page Style
     [xul/accesskey]  b
 
-# These should match what Safari and other Apple applications use on OS X Lion.
+show-all-tabs-cmd =
+    [xul/label]      Show All Tabs
+    [xul/accesskey]  A
+bidi-switch-page-direction-item =
+    [xul/label]      Switch Page Direction
+    [xul/accesskey]  D
+
+# Match what Safari and other Apple applications use on OS X Lion.
+[[ Full Screen controls ]]
+
 enter-full-screen-cmd =
     [xul/label]      Enter Full Screen
     [xul/accesskey]  F
@@ -231,12 +240,6 @@ full-screen-cmd =
     [xul/accesskey]  F
 full-screen-key =
     [xul/key]        f
-show-all-tabs-cmd =
-    [xul/label]      Show All Tabs
-    [xul/accesskey]  A
-bidi-switch-page-direction-item =
-    [xul/label]      Switch Page Direction
-    [xul/accesskey]  D
 
 
 [[ History menu ]]
@@ -257,7 +260,6 @@ history-restore-last-session =
     [xul/label]        Restore Previous Session
 history-undo-menu =
     [xul/label]        Recently Closed Tabs
-# See bug 394759
 history-undo-window-menu =
     [xul/label]        Recently Closed Windows
 

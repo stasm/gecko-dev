@@ -3,15 +3,16 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 urlbar =
-    [xul/placeholder] Search or enter address (FTL)
+    [xul/placeholder] Search or enter address
     [xul/accesskey]   d
+
 
 [[ Toolbar items ]]
 
 bookmarks-button =
     [xul/label]      Bookmarks
 
-# This command key for [lin] should not contain the letters A-F, since these
+# The command key for [lin] should not contain the letters A-F since they
 # are reserved shortcut keys on Linux.
 bookmarks-key =
     [xul/key]    { OS() ->
