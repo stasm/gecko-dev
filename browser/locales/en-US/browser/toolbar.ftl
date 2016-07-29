@@ -23,5 +23,5 @@ bookmarks-key =
 
 history-button =
     [xul/label]      History
-history-button-key =
+history-key =
     [xul/key]        h

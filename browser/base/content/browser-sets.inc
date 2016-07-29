@@ -129,7 +129,7 @@
     <!-- for both places and non-places, the sidebar lives at
          chrome://browser/content/history/history-panel.xul so there are no
          problems when switching between versions -->
-    <broadcaster id="viewHistorySidebar" autoCheck="false" data-l10n-id="history-button"
+    <broadcaster id="viewHistorySidebar" autoCheck="false" data-l10n-id="view-history-menuitem"
                  type="checkbox" group="sidebar"
                  sidebarurl="chrome://browser/content/history/history-panel.xul"
                  oncommand="SidebarUI.toggle('viewHistorySidebar');"/>
@@ -139,7 +139,7 @@
                  oncommand="SidebarUI.toggle('viewWebPanelsSidebar');"/>
 
     <broadcaster id="bookmarkThisPageBroadcaster"
-                 data-l10n-id="bookmark-this-page-cmd"/>
+                 data-l10n-id="bookmark-this-page-menuitem"/>
 
     <!-- popup blocking menu items -->
     <broadcaster id="blockedPopupAllowSite"
@@ -174,7 +174,7 @@
     <broadcaster id="sync-setup-state"/>
     <broadcaster id="sync-syncnow-state" hidden="true"/>
     <broadcaster id="sync-reauth-state" hidden="true"/>
-    <broadcaster id="viewTabsSidebar" autoCheck="false" data-l10n-id="synced-tabs-sidebar"
+    <broadcaster id="viewTabsSidebar" autoCheck="false" data-l10n-id="view-synced-tabs-menuitem"
                  type="checkbox" group="sidebar"
                  sidebarurl="chrome://browser/content/syncedtabs/sidebar.xhtml"
                  oncommand="SidebarUI.toggle('viewTabsSidebar');"/>
@@ -182,7 +182,7 @@
     <broadcaster id="socialSidebarBroadcaster" hidden="true"/>
 
     <broadcaster id="devtoolsMenuBroadcaster_PageSource"
-                 data-l10n-id="page-source-cmd"
+                 data-l10n-id="page-source-menuitem"
                  key="key_viewSource"
                  command="View:PageSource">
       <observes element="canViewSource" attribute="disabled"/>
@@ -318,7 +318,7 @@
 #endif
 
     <key id="key_gotoHistory"
-         data-l10n-id="history-button"
+         data-l10n-id="history-key"
 #ifdef XP_MACOSX
          modifiers="accel,shift"
 #else
@@ -336,7 +336,7 @@
 
     <key id="key_showAllTabs" command="Browser:ShowAllTabs" keycode="VK_TAB" modifiers="control,shift"/>
 
-    <key id="key_switchTextDirection" data-l10n-id="bidi-switch-text-direction-item" command="cmd_switchTextDirection" modifiers="accel,shift" />
+    <key id="key_switchTextDirection" data-l10n-id="bidi-switch-text-direction-key" command="cmd_switchTextDirection" modifiers="accel,shift" />
 
     <key id="key_privatebrowsing" command="Tools:PrivateBrowsing" key="&privateBrowsingCmd.commandkey;" modifiers="accel,shift"/>
     <key id="key_sanitize" command="Tools:Sanitize" keycode="VK_DELETE" modifiers="accel,shift"/>
